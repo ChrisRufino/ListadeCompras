@@ -28,24 +28,37 @@
         <input type="text" placeholder="Adicione um novo Item" />
         <button>Adicionar Item</button>
       </div>
-      <ul>
-        <li>
-          <img src="/assets/form/check.svg" alt="" />Pão de fomra
-          <img src="/assets/icons/lixeira.svg" alt="" />
-        </li>
-        <li>
-          <img src="/assets/form/check.svg" alt="" /> Café Preto
-          <img src="/assets/icons/lixeira.svg" alt="" />
-        </li>
-        <li>
-          <img src="/assets/form/check.svg" alt="" />Suco de Laranja
-          <img src="/assets/icons/lixeira.svg" alt="" />
-        </li>
-        <li>
-          <img src="/assets/form/check.svg" alt="" />Bolacha
-          <img src="/assets/icons/lixeira.svg" alt="" />
-        </li>
-      </ul>
+
+      <form action="checkbox">
+        <ul>
+          <li>
+            <label for="pao"
+              ><input type="checkbox" name="Item" value="pao" />Pão de
+              fomra</label
+            >
+            <img src="/assets/icons/lixeira.svg" alt="remove" />
+          </li>
+          <li>
+            <label for="cafe">
+              <input type="checkbox" name="Item" id="cafe" /> Café Preto
+            </label>
+            <img src="/assets/icons/lixeira.svg" alt="remove" />
+          </li>
+          <li>
+            <label for="suco"
+              ><input type="checkbox" name="item" id="suco" />Suco de
+              Laranja</label
+            >
+            <img src="/assets/icons/lixeira.svg" alt="remove" />
+          </li>
+          <li>
+            <label for="bolacha">
+              <input type="checkbox" name="item" id="bolacha" /> Bolacha
+            </label>
+            <img src="/assets/icons/lixeira.svg" alt="remove" />
+          </li>
+        </ul>
+      </form>
     </div>
     <script src="script.js"></script>
   </body>

@@ -1,0 +1,10 @@
+form {
+  input[type='checkbox'] {
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid #333;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    accent-color: var(--color-brand); /* define a cor do check (moderno) */
+  }
+}
