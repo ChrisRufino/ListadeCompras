@@ -1,5 +1,6 @@
 form {
   margin-top: 2.5rem;
+  cursor: pointer;
   & ul {
     display: flex; /* Adicione isso */
     flex-direction: column; /* Para alinhar os <li> verticalmente */

@@ -7,7 +7,6 @@ header {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-
   margin-top: 1.5rem;
   & .back {
     background: none;
@@ -16,7 +15,11 @@ header {
     color: var(--color-brand);
     font: 400 1.2rem / 1.5 'Inter', sans-serif;
   }
+}
 
-  & .seta {
+@media (width >= 80em) {
+  main p,
+  main div {
+    display: none;
   }
 }
