@@ -8,7 +8,7 @@ div.adicionar {
   margin: auto;
 
   & input {
-    padding: 0.5rem;
+    padding: 1rem;
     border: 1px solid var(--border-primary); /* força a borda aparecer */
     border-radius: 0.5rem;
   }
@@ -28,5 +28,13 @@ div.adicionar {
 
   & button:hover {
     background-color: var(--color-brand-hover);
+  }
+  & input:hover {
+    border: 1px solid var(--border-hover);
+  }
+  & input:focus {
+    outline: none; /* remove o contorno azul padrão */
+    border: 2px solid var(--color-brand);
+    color: var(--content-primary);
   }
 }
