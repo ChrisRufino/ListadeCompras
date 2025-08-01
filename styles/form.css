@@ -1,29 +1,66 @@
 form {
   margin-top: 2.5rem;
+  & ul {
+    display: flex; /* Adicione isso */
+    flex-direction: column; /* Para alinhar os <li> verticalmente */
+    gap: 0.75rem; /* Agora o gap funcionará */
+    padding: 0; /* Remove o padding padrão da UL */
+    list-style: none; /* Remove os bullets */
+  }
+  & li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-radius: 0.75rem;
+
+    height: 4rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--background-secondary);
+
+    & label {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+
+      color: var(--content-secondary);
+      font: 800 var(--content-secondary) / 1.5 'Inter', sans-serif;
+    }
+  }
 }
 
-form ul {
-  display: flex; /* Adicione isso */
-  flex-direction: column; /* Para alinhar os <li> verticalmente */
-  gap: 0.75rem; /* Agora o gap funcionará */
-  padding: 0; /* Remove o padding padrão da UL */
-  list-style: none; /* Remove os bullets */
+img[src*='lixeira'] {
+  width: 1.2rem;
 }
 
-form li {
-  display: flex; /* Para posicionar checkbox + texto + lixeira lado a lado */
-  align-items: center;
-  justify-content: space-between;
-
-  border-radius: 0.75rem;
-  max-width: 20rem;
-  height: 4rem;
-  padding: 0.5rem 1rem;
-  background-color: var(--background-secondary);
+input[type='checkbox'] {
+  width: 1rem;
+  height: 1rem;
+  border: 0.06rem solid #d1d5db; /* Cor da borda */
+  border-radius: 4px; /* Bordas arredondadas */
+  appearance: none; /* Remove o estilo padrão do navegador */
+  -webkit-appearance: none; /* Safari */
+  outline: none;
+  cursor: pointer;
+  background-color: white; /* Fundo quando desmarcado */
+  position: relative;
 }
 
-form li label {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem; /* espaço entre o checkbox e o texto */
+input[type='checkbox']:checked {
+  background-color: var(--color-brand); /* Fundo quando marcado */
+  border-color: var(--color-brand); /* Cor da borda quando marcado */
+}
+
+input[type='checkbox']::before {
+  content: '✔';
+  position: absolute;
+  top: -2px;
+  left: 1px;
+  font-size: 0.8rem;
+  color: var(--border-hover);
+  display: none;
+}
+
+input[type='checkbox']:checked::before {
+  display: block;
 }
