@@ -18,8 +18,8 @@ header {
 }
 
 @media (width >= 80em) {
-  main p,
-  main div {
+  header p,
+  header div {
     display: none;
   }
 }
