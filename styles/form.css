@@ -65,3 +65,9 @@ input[type='checkbox']::before {
 input[type='checkbox']:checked::before {
   display: block;
 }
+
+@media (width >= 80em) {
+  li {
+    max-width: 40rem;
+  }
+}

@@ -38,6 +38,7 @@
 body {
   background-color: var(--background-primary);
   align-items: center;
+  overflow: hidden;
   margin: auto;
 }
 
@@ -54,5 +55,13 @@ main {
   & h1 {
     margin: 1rem 0 2.7rem 0;
     font: 700 var(--title-md) / 1.5 'Inter', sans-serif;
+  }
+}
+
+@media (width >= 80em) {
+  main.container {
+    margin: auto;
+
+    width: 32rem;
   }
 }

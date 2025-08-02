@@ -17,9 +17,32 @@ header {
   }
 }
 
+main.container {
+  & .logo {
+    display: none;
+  }
+}
+
 @media (width >= 80em) {
   header p,
   header div {
     display: none;
+  }
+  main.container {
+    & .logo {
+      display: flex;
+      margin: 1.5rem 0 0 10rem;
+      gap: 0.5rem;
+      align-items: center;
+      & img {
+        width: 2rem;
+        height: 2rem;
+      }
+
+      & P {
+        font: 800 var(--title-lg) / 1.5 'Inter', sans-serif;
+        color: var(--content-secondary);
+      }
+    }
   }
 }
