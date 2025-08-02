@@ -23,7 +23,7 @@ main.container {
   }
 }
 
-@media (width >= 80em) {
+@media (width >= 53.875em) {
   header p,
   header div {
     display: none;

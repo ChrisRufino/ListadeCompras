@@ -58,7 +58,7 @@ main {
   }
 }
 
-@media (width >= 80em) {
+@media (width >= 53.875em) {
   main.container {
     margin: auto;
 

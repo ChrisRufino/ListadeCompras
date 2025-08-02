@@ -39,14 +39,14 @@ div.adicionar {
   }
 }
 
-@media (width >= 80em) {
+@media (width >= 53.875em) {
   div.adicionar {
     display: flex;
     flex-direction: row;
     & button {
       width: 10rem;
       padding: 0.5rem;
-      font-size: 1rem;
+      font-size: 0.8rem;
     }
 
     & input {
