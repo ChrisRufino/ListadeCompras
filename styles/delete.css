@@ -1,0 +1,22 @@
+form {
+  & .delete {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-danger);
+    border-radius: 1.5rem;
+    padding: 0.5rem;
+  }
+  & p {
+    margin-left: 1rem;
+    color: var(--always-white);
+    font: 700 var(--link) / 1.5 'Inter', sans-serif;
+    display: none;
+  }
+  img {
+    color: var(--always-white);
+    display: none;
+  }
+  img[src*='delete'] {
+    margin-left: 15rem;
+  }
+}
