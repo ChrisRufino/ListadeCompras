@@ -1,4 +1,4 @@
-const form = document.getElementById('form');
+const form = document.getElementById('form-add');
 const input = form.querySelector('input');
 const ul = form.querySelector('ul');
 const removeIcons = document.querySelectorAll('img.remove'); // Seleciona todas as imagens com classe 'remove'
@@ -11,8 +11,6 @@ removeIcons.forEach((icon) => {
     }
   });
 });
-
-
 
 form.addEventListener('submit', function (event) {
   event.preventDefault(); // evita o recarregamento da página
