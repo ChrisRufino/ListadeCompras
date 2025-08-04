@@ -1,6 +1,18 @@
-const form = document.getElementById('form-add');
+const form = document.getElementById('form');
 const input = form.querySelector('input');
 const ul = form.querySelector('ul');
+const removeIcons = document.querySelectorAll('img.remove'); // Seleciona todas as imagens com classe 'remove'
+
+removeIcons.forEach((icon) => {
+  icon.addEventListener('click', function () {
+    const li = this.closest('li');
+    if (li) {
+      li.remove();
+    }
+  });
+});
+
+
 
 form.addEventListener('submit', function (event) {
   event.preventDefault(); // evita o recarregamento da página
@@ -18,8 +30,11 @@ form.addEventListener('submit', function (event) {
     checkbox.value = valor.toLowerCase();
     checkbox.id = valor.toLowerCase();
 
-    img.src = '/assets/icons/lixeira.svg';
+    img.src = './assets/icons/lixeira.svg';
     img.alt = 'remover';
+
+    const imgRemove = document.querySelector('img');
+    imgRemove.classList.add('remove');
 
     label.setAttribute('for', checkbox.id);
     label.appendChild(checkbox);
@@ -27,10 +42,9 @@ form.addEventListener('submit', function (event) {
 
     li.appendChild(label);
     li.appendChild(img);
+
     ul.appendChild(li);
 
     input.value = '';
   }
 });
-
-console.log('teste');

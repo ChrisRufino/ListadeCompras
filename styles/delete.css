@@ -12,11 +12,11 @@ form {
     font: 700 var(--link) / 1.5 'Inter', sans-serif;
     display: none;
   }
-  img {
-    color: var(--always-white);
+
+  img[src*='delete'] {
     display: none;
   }
-  img[src*='delete'] {
-    margin-left: 15rem;
+  img[src*='atention'] {
+    display: none;
   }
 }

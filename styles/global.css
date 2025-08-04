@@ -38,7 +38,7 @@
 body {
   background-color: var(--background-primary);
   align-items: center;
-  overflow: hidden;
+
   margin: auto;
 }
 
